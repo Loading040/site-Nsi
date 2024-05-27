@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithme Glouton</title>
+    <link rel="stylesheet" type="text/css" href="style.css">  <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+    <h1>Algorithme Glouton</h1>
+    <h2>Introduction à l'Algorithme Glouton</h2>
+    <center>
+        <img src="imageGlouton.svg.png" width="300" height="150" alt="Diagramme de l'algorithme glouton">  <!-- Image de l'algorithme -->
+    </center>
+    <div class="center">
+        <p class="box">Un algorithme glouton est une méthode algorithmique qui fait des choix locaux optimaux à chaque étape dans l'espoir de trouver une solution globale optimale.</p>
+        <h3>Exemples classiques:</h3>
+        <ul>
+            <li><a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos" target="_blank">Problème du sac à dos</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Arbre_couvrant_minimal" target="_blank">Problème de l'arbre couvrant minimal</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_la_pieuvre" target="_blank">Problème de la pieuvre</a></li>
+        </ul>
+        <h3>Exemple Personnel:</h3>
+        <p class="box" id="highlight">Imaginons que nous devons planifier des activités pour une journée afin de maximiser le nombre d'activités sans chevauchement...</p>
+        <pre>
+def planifier_activites(activites):
+    activites_tries = sorted(activites, key=lambda x: x[1])  # Trier par heure de fin
+    plan = []
+    derniere_fin = 0
+    for debut, fin in activites_tries:
+        if debut >= derniere_fin:
+            plan.append((debut, fin))
+            derniere_fin = fin
+    return plan
+
+activites = [(9, 10), (10, 11), (11, 12), (12, 13), (9, 11)]
+print(planifier_activites(activites))
+        </pre>
+    </div>
+    <div class="center">
+        <h3><a href="index.html">Accueil</a></h3>  <!-- Lien vers l'accueil -->
+        <h3><a href="page2.html">Commandes Linux</a></h3>  <!-- Lien vers page2 -->
+    </div>
+    <footer>Fait par William G</footer>
+</body>
+</html>

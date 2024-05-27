@@ -1,0 +1,107 @@
+/* style.css */
+
+body {
+    background-color: #D7FEFF;  /* Couleur de fond */
+    font-family: Arial, sans-serif;  /* Police générale */
+    color: #333;  /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-decoration: underline;  /* Soulignement */
+    color: blue;  /* Couleur du titre */
+    font-family: Times, serif;  /* Police du titre */
+    font-size: 35px;
+    text-align: center;  /* Centrer le titre */
+    margin-top: 20px;
+}
+
+h2 {
+    color: black;  /* Couleur des sous-titres */
+    font-family: Times, serif;  /* Police des sous-titres */
+    font-size: 30px;
+    text-align: center;  /* Centrer les sous-titres */
+    margin-top: 10px;
+}
+
+label {
+    display: block;  /* Afficher les labels en bloc */
+    margin-bottom: 5px;
+}
+
+form {
+    margin: 0 auto;  /* Centrer le formulaire */
+    width: 400px;
+    padding: 20px;  /* Padding interne du formulaire */
+    background-color: #fff;  /* Couleur de fond du formulaire */
+    border-radius: 5px;  /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Ombre légère */
+}
+
+input, textarea {
+    width: 100%;  /* Largeur des champs de saisie */
+    padding: 10px;  /* Padding interne des champs de saisie */
+    margin-bottom: 10px;  /* Marge inférieure */
+    border: 1px solid #ccc;  /* Bordure des champs de saisie */
+    border-radius: 3px;  /* Bords arrondis */
+}
+
+button {
+    display: block;  /* Afficher le bouton en bloc */
+    width: 100%;  /* Largeur du bouton */
+    padding: 10px;  /* Padding interne du bouton */
+    background-color: #007BFF;  /* Couleur de fond du bouton */
+    color: #fff;  /* Couleur du texte du bouton */
+    border: none;  /* Pas de bordure */
+    border-radius: 3px;  /* Bords arrondis */
+    cursor: pointer;  /* Curseur en forme de main */
+}
+
+button:hover {
+    background-color: #0056b3;  /* Couleur de fond au survol */
+}
+
+img {
+    display: block;  /* Afficher les images en bloc */
+    margin: 0 auto;  /* Centrer les images */
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #007BFF;  /* Couleur des liens */
+    text-decoration: none;  /* Pas de soulignement */
+    margin: 0 15px;
+}
+
+a:hover {
+    text-decoration: underline;  /* Soulignement au survol */
+}
+
+p {
+    text-align: center;  /* Centrer les paragraphes */
+}
+
+.center {
+    text-align: center;  /* Centrer les éléments avec cette classe */
+}
+
+footer {
+    text-align: center;  /* Centrer le footer */
+    margin-top: 20px;
+}
+
+/* Ajout d'une classe .box */
+.box {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Ajout d'un id #highlight */
+#highlight {
+    color: red;
+    font-weight: bold;
+}
